@@ -66,4 +66,5 @@ public class City {
                 ", foundation='" + foundation + '\'' +
                 '}' + "\n";
     }
+
 }
