@@ -20,8 +20,7 @@ public class CityParser {
                 } else {
                     foundation = values[5];
                 }
-                cities.add(new City(Integer.parseInt(values[0]),
-                        values[1],
+                cities.add(new City(values[1],
                         values[2],
                         values[3],
                         Integer.parseInt(values[4]),

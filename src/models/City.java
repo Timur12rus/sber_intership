@@ -1,7 +1,6 @@
 package models;
 
 public class City {
-    private int id;
     private String name;
 
     private String region;
@@ -10,23 +9,13 @@ public class City {
 
     private String foundation;
 
-    public City(int id, String name, String region, String district, int population, String foundation) {
-        this.id = id;
+    public City(String name, String region, String district, int population, String foundation) {
         this.name = name;
         this.region = region;
         this.district = district;
         this.population = population;
         this.foundation = foundation;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
@@ -70,8 +59,7 @@ public class City {
     @Override
     public String toString() {
         return "City{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", region='" + region + '\'' +
                 ", district='" + district + '\'' +
                 ", population=" + population +
