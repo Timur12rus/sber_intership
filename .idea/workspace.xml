@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40dbae74-9344-4621-a758-20a5653139b7" name="Changes" comment="Add sort cities by name and sort cities by district and name">
+    <list default="true" id="40dbae74-9344-4621-a758-20a5653139b7" name="Changes" comment="index and maxPopulation value">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -73,7 +73,7 @@
       <updated>1695297997098</updated>
       <workItem from="1695297998249" duration="2679000" />
       <workItem from="1695369888727" duration="2132000" />
-      <workItem from="1695619180394" duration="6570000" />
+      <workItem from="1695619180394" duration="10255000" />
     </task>
     <task id="LOCAL-00001" summary="Add Cities to ArrayList">
       <created>1695300081864</created>
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695632548406</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="index and maxPopulation value">
+      <created>1695637621922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695637621922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +120,7 @@
     <MESSAGE value="Add Cities to ArrayList" />
     <MESSAGE value="Add sort cities by name in reverse order" />
     <MESSAGE value="Add sort cities by name and sort cities by district and name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sort cities by name and sort cities by district and name" />
+    <MESSAGE value="index and maxPopulation value" />
+    <option name="LAST_COMMIT_MESSAGE" value="index and maxPopulation value" />
   </component>
 </project>
