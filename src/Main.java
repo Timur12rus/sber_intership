@@ -10,45 +10,16 @@ public class Main {
 
         List<City> cities = CityParser.parse();
 
-//      сортируем по названию города по убыванию в алфавитном порядке (реализация Comparator)
-        Collections.sort(cities, new Comparator<City>() {
-            @Override
-            public int compare(City o1, City o2) {
-                return o1.getName().compareTo(o2.getName());
+        City[] citiesArray = cities.toArray(new City[0]);
+        int maxPopulation = 0;
+        int indexOfMaxPopulation = 0;
+        for (int i = 0; i < citiesArray.length; i++) {
+            if (citiesArray[i].getPopulation() > maxPopulation) {
+                maxPopulation = citiesArray[i].getPopulation();
+                indexOfMaxPopulation = i;
             }
-        });
-        System.out.println(cities);
+        }
 
-//      сортируем по названию города по убыванию в алфавитном порядке (реализация Lambda)
-        cities.sort((o1, o2) -> {
-            return o1.getName().compareTo(o2.getName());
-        });
-        System.out.println(cities);
-
-//      сортируем по двум полям справочника – федеральному округу и наименованию города:
-        Collections.sort(cities, new Comparator<City>() {
-            @Override
-            public int compare(City o1, City o2) {
-                int cmp1 = o1.getDistrict().compareTo(o2.getDistrict());
-                if (cmp1 == 0) {
-                    return o1.getName().compareTo(o2.getName());
-                } else {
-                    return cmp1;
-                }
-            }
-        });
-        System.out.println(cities);
-
-//      сортируем по двум полям справочника – федеральному округу и наименованию города(реализация Lambda):
-        cities.sort((o1, o2) ->
-        {
-            int cmp1 = o1.getDistrict().compareTo(o2.getDistrict());
-            if (cmp1 == 0) {
-                return o1.getName().compareTo(o2.getName());
-            } else {
-                return cmp1;
-            }
-        });
-        System.out.println(cities);
+        System.out.println("[" + indexOfMaxPopulation + "] = " + maxPopulation);
     }
 }
